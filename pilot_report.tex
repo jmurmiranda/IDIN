@@ -55,7 +55,7 @@
 \rhead{}
 
 % Footers
-\lfoot{\footnotesize \today}
+%\lfoot{\footnotesize \today}
 \cfoot{}
 \rfoot{\footnotesize Page \thepage\ of \pageref{LastPage}} % "Page 1 of 2"
 
@@ -71,23 +71,23 @@
 
 \newcommand{\HorRule}{\color{DarkGoldenrod} \rule{\linewidth}{1pt}} % Defines the gold horizontal rule around the title
 
-\pretitle{\vspace{-30pt} \begin{flushleft} \HorRule \fontsize{50}{50} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont} % Horizontal rule before the title
+\pretitle{\vspace{-30pt} \begin{flushleft} \HorRule \fontsize{20}{20} \usefont{OT1}{phv}{b}{n} \color{DarkRed} \selectfont} % Horizontal rule before the title
 
-\title{Smart Lantern Workshop Pilot Report} % Your article title
+\title{Smart Lantern Workshop Pilot Report\\\vspace{.1in}{July 26-28, 2014, Orkolili, Tanzania}} % Your article title
 
 \posttitle{\par\end{flushleft}\vskip 0.5em} % Whitespace under the title
 
 \preauthor{\begin{flushleft}\large \lineskip 0.5em \usefont{OT1}{phv}{b}{sl} \color{DarkRed}} % Author font configuration
 
-\author{Megan McCauley, Mika Ichiki-Welches, Jose Oscar Mur-Miranda, } % Your name
+\author{Megan McCauley, Mika Ichiki-Welches, and Jose Oscar Mur-Miranda,\\} % Your name
 
-\postauthor{\footnotesize \usefont{OT1}{phv}{m}{sl} \color{Black} % Configuration for the institution name
+\postauthor{\usefont{OT1}{phv}{m}{sl} \color{Black} % Configuration for the institution name
 Olin College of Engineering % Your institution
 
 \par\end{flushleft}\HorRule} % Horizontal rule after the title
 
 %----------------------------------------------------------------------------------------
-\date{July 26-28, 2014} % Add a date here if you would like one to appear underneath the title block
+\date{} % Add a date here if you would like one to appear underneath the title block
 
 \begin{document}
 
@@ -100,7 +100,7 @@ Olin College of Engineering % Your institution
 %----------------------------------------------------------------------------------------
 
 % The first character should be within \initial{} for a large character
-\noindent \textbf{This is the abstract text. It should summarize the main idea of the paper. Don't write abstracts that say ``I will analyze x and focus on y''. This is akin to saying ``In this paper, I will introduce a subject as mentioned in my title, analyze data relevant to it, and discuss some conclusions.'' The abstract is the juiciest possible content.}
+%\noindent \textbf{This is the abstract text. It should summarize the main idea of the paper. Don't write abstracts that say ``I will analyze x and focus on y''. This is akin to saying ``In this paper, I will introduce a subject as mentioned in my title, analyze data relevant to it, and discuss some conclusions.'' The abstract is the juiciest possible content.}
 
 %----------------------------------------------------------------------------------------
 %	ARTICLE CONTENTS
@@ -110,16 +110,17 @@ Olin College of Engineering % Your institution
 \section*{Objectives}
 The International Development Innovation Network (IDIN) is an international consortium that fosters sustainable, local innovation through design, entrepreneurship and technology. A variety of hands-on workshops exposes network members to different technologies that can serve as design tools. The smart light workshop steps the participants through the construction of an LED lantern that incorporates a low-cost, programmable microcontroller.
 The workshop is designed to:
-
 \begin{itemize}
 \item give participants basic electronic fabrication skills,
 \item view electronic system design as being composed of interchangeable subsystems, and
 \item introduce programmable feedback devices into their design thinking.
 \end{itemize}
+\includegraphics[width=.7\columnwidth]{the_lantern.jpg}
 
 %-------------------------------Technology
 \section*{Technology}
 The smart light uses a PIC10F200 microcontroller to dim the perceived brightness of three LEDs using pulse-width modulation. The user can cycle through the different brightness levels by pushing a tactile switch. The circuit is powered by two AA batteries, and any container of the appropriate size may be used as an enclosure.
+\includegraphics[width=\columnwidth]{lantern_push_button.jpg}
 
 The microcontroller is used to regulate the power delivered to the LEDs. The power delivered from the AA batteries flows into the microcontroller, which then drives the LEDs directly connected to the output pins. Since LEDs can only be fully on or fully off, the microcontroller regulates the power delivered using pulse-width modulation.
 %-------------------------------Stakeholders
@@ -143,21 +144,27 @@ The relatively advanced facilities of the school support a hands-on curriculum. 
 %-------------------------------Methods
 \section*{Methods}
 In order to devise appropriate methods of teaching and building the lanterns, we utilized bodystorming. Bodystorming is a user-centered approach where the participants get up and use physical movements in order to better understand concepts. In our case, bodystorming was essential for demonstrating the proper way to solder. We had the students act out each of the components involved in soldering: the soldering iron, wire, solder, and each electrical component. This interactive demonstration was particularly useful because of the complexities involved in describing soldering and the small scale that it would have had to be demonstrated on with the actual components.
+\includegraphics[width=\columnwidth]{bodystorming.jpg}
 
 Another technique that we used to assist in the building of the lanterns involved using wood blocks and sticky tack to assist in the process of soldering. The wood blocks were initially used to protect the tables from being burnt by the hot tip of the soldering iron. The sticky tack idea was generated last year during the same smart light workshop at IDDS 2013 in Zambia by another research student. The sticky tack holds down the components and frees up your hands to perform the actual soldering process. The concept behind this is that soldering typically requires at least three hands: one to hold the soldering iron, one to hold the solder, and one to keep the components flat on the work surface. There are many complicated and expensive devices to help with this, marketing themselves as “Third Hand” kits and the “Helping Hand.” However, with the combination of sticky tack and the wood block, we have created a simple, low-cost solution to this problem.
+\includegraphics[width=\columnwidth]{wood_block_soldering.jpg}
 
 We utilized peer teaching by having the students turn around and become the teachers.  On day one, we taught the workshop to eight students with the explicit expectation that they would teach the workshop the next day. Of those eight students, four became student teachers on the next day. The ability to take the knowledge that they learned the day before and relay it to their peers is generally an equalizing and empowering experience for students. Not only had they built their own smart light, but they owned the knowledge and made sure that one of their classmates was able to do the same. This system that we set into place allows for ease of replication of the workshop and a sense of sustainability because the teachers are students who attend the Orkolili Secondary School.
+\includegraphics[width=\columnwidth]{teachers.jpg}\\
+\includegraphics[width=\columnwidth]{more_teachers.jpg}
 
 We also enabled exploration on the third day we were at the school, by providing students with uninhibited access to the soldering irons. This was an opportunity for exploration and innovation. We brought the soldering irons that they had been working with and left all of our supplies readily available. Throughout the day, students brought their broken flashlights from home to fix. Some of them were even able to determine what was wrong with them and fix them on their own, and with each other’s help. We also had cases of the students innovating through creation of different lanterns made my combing parts of their own broken lanterns with the LEDs and microcontrollers that we brought as part of the smart light workshop. The idea behind this is that the students would be able to see the value in their own designs and see themselves as designers.
+\includegraphics[width=\columnwidth]{innovation_students.jpg}\\
+\includegraphics[width=\columnwidth]{innovation_lantern.jpg}
 
 %-------------------------------Results
 \section*{Results}
-The first goal, fabrication skills, was met with absolute success. Bodystorming was essential in giving participants a clear sense of the how to solder in a humorous context that made it fun and memorable. Additionally, the soldering technique using wood block and sticky tack substantially increased the quality and reliability of solder joints from absolute beginners. Furthermore, student teachers became so proficient at soldering and fabrication that they were to focus their attention on the system itself. This focus allowed the student teachers to effectively troubleshoot the problems they saw.\ \\
-\ \\
-Mastery of fabrication was essential to enable a subset of students to understand the system as a modular set of interchangeable blocks. Both student participants, and to a much clearer extent, student teachers, were able to diagnose fabrication problems by designing tests that isolated the different subsystems. In this way, they were able to differentiate a burned out LED from an incorrect solder connection or an unresponsive microcontroller. Since the physical phenomena in electrical engineering is not visible (i.e. voltage and current), what happens inside the system can only be determined indirectly by relying on visible effects. Thus, the student’s ability to troubleshoot suggests they had confidence in abstract models of the system.\ \\
-\ \\
-Furthermore, the creation of mental models was also evident when some participants were able to identify the equivalent subsystems in their own lanterns. The lanterns where visually very different, but the participants were able to fix them using their knowledge of the smart light and their fabrication skills.\ \\
-\ \\
+The first goal, fabrication skills, was met with absolute success. Bodystorming was essential in giving participants a clear sense of the how to solder in a humorous context that made it fun and memorable. Additionally, the soldering technique using wood block and sticky tack substantially increased the quality and reliability of solder joints from absolute beginners. Furthermore, student teachers became so proficient at soldering and fabrication that they were to focus their attention on the system itself. This focus allowed the student teachers to effectively troubleshoot the problems they saw.
+
+Mastery of fabrication was essential to enable a subset of students to understand the system as a modular set of interchangeable blocks. Both student participants, and to a much clearer extent, student teachers, were able to diagnose fabrication problems by designing tests that isolated the different subsystems. In this way, they were able to differentiate a burned out LED from an incorrect solder connection or an unresponsive microcontroller. Since the physical phenomena in electrical engineering is not visible (i.e. voltage and current), what happens inside the system can only be determined indirectly by relying on visible effects. Thus, the student's ability to troubleshoot suggests they had confidence in abstract models of the system.
+
+Furthermore, the creation of mental models was also evident when some participants were able to identify the equivalent subsystems in their own lanterns. The lanterns where visually very different, but the participants were able to fix them using their knowledge of the smart light and their fabrication skills.
+
 At the extreme, in at least two occasions, participants were able to combine parts from their own lanterns with parts from our workshop to create new designs that were different from both the design of the smart light and their own lantern. This is the ultimate goal of the program, to enable local creation of new systems. Our future expectation is that the participants are able to create new designs that address local needs in their lives or their communities.\ \\
 \ \\
 Since we have not found an effective way for participants to reprogram the microcontroller, we have no evidence at this point for our third goal, the incorporation of feedback and programmability in their design thinking. While participants were told that the microcontrollers were programmed and that their behavior could be changed, the workshop itself does not allow them to do this. We hope to either create additional workshops, or expand this workshop so that participants are able to change the programming in order to achieve different behavior according to their designs.
